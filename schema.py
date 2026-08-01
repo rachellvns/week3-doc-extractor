@@ -11,8 +11,8 @@ class Patient(BaseModel):
     
     @model_validator(mode="after")
     def validate_age_format(self):
-        if self.age is not None and self.age_unit is not None:
-            if self.age_unit == "years" and self.age % 1 != 0:
+        if self.age_value is not None and self.age_unit is not None:
+            if self.age_unit == "years" and self.age_value % 1 != 0:
                 raise ValueError(
                     "Age in years must be a whole number"
                 )
