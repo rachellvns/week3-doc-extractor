@@ -1,0 +1,39 @@
+{
+  "consultation_id": "TM-2026-0001",
+  "date": "10 Jan 2026",
+  "patient": {
+    "name": "Sarah L.",
+    "age_value": 28,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "patient_history": "patient reports painful swallowing. fever peaked at 38.1°c yesterday. denies cough, sob, chest pain or recent travel",
+  "consultation_reason": "sore throat and fever for 3 days",
+  "diagnoses": [
+    {
+      "condition": "Viral Pharyngitis",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": null,
+      "unit": null,
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+    
+  ],
+  "treatment_plan": [
+    "fluids and rest"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "72 hours",
+    "instructions": "virtual review if no improvement"
+  }
+}

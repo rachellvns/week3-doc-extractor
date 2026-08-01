@@ -1,0 +1,344 @@
+Example 1
+
+Input:
+TM Case 0007
+Date: 2026/04/01
+
+Patient: Sarah L.
+Age: 28 years
+Female
+
+Reason:
+Sore throat x3 days.
+
+Assessment:
+Likely viral pharyngitis.
+
+Rx:
+Paracetamol 500 mg PRN if fever returns.
+
+Plan:
+Rest.
+Increase fluids.
+
+Output:
+{
+  "consultation_id": "TM-2026-0007",
+  "date": "01 Apr 2026",
+  "patient": {
+    "name": "Sarah L.",
+    "age_value": 28,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "patient_history": null,
+  "consultation_reason": "sore throat for 3 days",
+  "diagnoses": [
+    {
+      "condition": "Viral Pharyngitis",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": 500,
+      "unit": "mg",
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": "if fever returns"
+    }
+  ],
+  "treatment_plan": [
+    "rest",
+    "increase fluids"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}
+
+
+Example 2
+
+Input:
+Consultation ID: TM-0012
+
+Date:
+15 May 2026
+
+Patient:
+Adam R.
+6.5 months
+Male
+
+Assessment:
+Confirmed otitis media.
+
+Medication:
+Amoxicillin 125 mg BD x7 days.
+
+Follow-up:
+RTC PRN.
+
+Output:
+{
+  "consultation_id": "TM-2026-0012",
+  "date": "15 May 2026",
+  "patient": {
+    "name": "Adam R.",
+    "age_value": 6.5,
+    "age_unit": "month(s)",
+    "sex": "Male"
+  },
+  "patient_history": null,
+  "consultation_reason": null,
+  "diagnoses": [
+    {
+      "condition": "Otitis Media",
+      "certainty": "confirmed",
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Amoxicillin",
+      "dosage": 125,
+      "unit": "mg",
+      "frequency": "twice daily",
+      "duration": "7 days",
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "as needed",
+    "instructions": "return to clinic"
+  }
+}
+
+
+Example 3
+
+Input:
+Case: TM-2026-0042
+
+Date:
+8-6-2026
+
+Patient:
+Emily T.
+34 years
+Female
+
+Assessment:
+Possible migraine, improving.
+
+Treatment:
+Hydration.
+Avoid bright lights.
+
+Rx:
+Ibuprofen 400mg TDS.
+
+Output:
+{
+  "consultation_id": "TM-2026-0042",
+  "date": "08 Jun 2026",
+  "patient": {
+    "name": "Emily T.",
+    "age_value": 34,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "patient_history": null,
+  "consultation_reason": null,
+  "diagnoses": [
+    {
+      "condition": "Migraine",
+      "certainty": "possible",
+      "status": "improving"
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Ibuprofen",
+      "dosage": 400,
+      "unit": "mg",
+      "frequency": "three times daily",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "hydration",
+    "avoid bright lights"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}
+
+
+Example 4
+
+Input:
+Consultation #: TM-2026-0055
+
+Patient: David N. (52M)
+
+Consultation for lower back pain after lifting furniture two days ago.
+
+Pain is localized, worsens with bending. No numbness or leg weakness reported.
+
+Impression:
+Musculoskeletal strain.
+
+Rx:
+Paracetamol if required.
+Advise rest and avoid heavy lifting for now.
+
+Disposition:
+Return if pain persists beyond 5 days or numbness develops.
+
+Output:
+{
+  "consultation_id": "TM-2026-0055",
+  "date": null,
+  "patient": {
+    "name": "David N.",
+    "age_value": 52,
+    "age_unit": "year(s)",
+    "sex": "Male"
+  },
+  "patient_history": "pain is localized, worsens with bending. no numbness or leg weakness reported",
+  "consultation_reason": "lower back pain after lifting furniture two days ago",
+  "diagnoses": [
+    {
+      "condition": "Musculoskeletal Strain",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": null,
+      "unit": null,
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "advise rest and avoid heavy lifting for now"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": null,
+    "instructions": "return if pain persists beyond 5 days or numbness develops"
+  }
+}
+
+Example 5
+
+Input:
+Telemedicine Consultation
+
+Patient:
+Noah K.
+7.5 months
+Male
+
+Reason:
+Feeding discomfort.
+
+History:
+Father reports symptoms started around 10 days ago.
+Baby becomes unsettled after bottle feeds and occasionally pulls away from the teat.
+He is still taking feeds normally and has 5-6 wet diapers per day.
+No fever.
+No blood in stool.
+No vomiting.
+Growth has been tracking well according to parents.
+
+Background:
+Delivered at term without complications.
+No known drug allergies.
+No previous hospital admissions.
+
+Assessment:
+Possible feeding intolerance.
+
+Output:
+{
+  "consultation_id": null,
+  "date": null,
+  "patient": {
+    "name": "Noah K.",
+    "age_value": 7.5,
+    "age_unit": "month(s)",
+    "sex": "Male"
+  },
+  "patient_history": "father reports symptoms started around 10 days ago. baby becomes unsettled after bottle feeds and occasionally pulls away from the teat. he is still taking feeds normally and has 5-6 wet diapers per day. no fever. no blood in stool. no vomiting. growth has been tracking well according to parents. delivered at term without complications. no known drug allergies. no previous hospital admissions",
+  "consultation_reason": "feeding discomfort",
+  "diagnoses": [
+    {
+      "condition": "Feeding Intolerance",
+      "certainty": "possible",
+      "status": null
+    }
+  ]
+}
+
+Example 6
+
+Input:
+TM20261234
+Patient:
+Dorothy W.
+16Fe
+
+Assessment:
+Classic cluster headache with tearing of the left eye.
+
+Medication:
+Dexamethasone 5mg od
+
+Output:
+{
+  "consultation_id": "TM-2026-1234",
+  "date": null,
+  "patient": {
+    "name": "Dorothy W.",
+    "age_value": 16,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "diagnoses": [
+    {
+      "condition": "Classic Cluster Headache",
+      "certainty": null,
+      "status": null
+    },
+    {
+      "condition": "Tearing of The Left Eye",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Dexamethasone",
+      "dosage": 5,
+      "unit": "mg",
+      "frequency": "once daily",
+      "duration": null,
+      "additional_notes": null
+    }
+  ]
+}

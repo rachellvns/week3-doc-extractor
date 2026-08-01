@@ -1,0 +1,30 @@
+{
+  "consultation_id": "TM-2026-0004",
+  "date": null,
+  "patient": {
+    "name": "Daniel P.",
+    "age_value": 52,
+    "age_unit": "year(s)",
+    "sex": "Male"
+  },
+  "patient_history": "home bp averaging 145/92 over past 2 weeks. compliant with amlodipine. denies cp/sob/dizziness",
+  "consultation_reason": "bp review",
+  "diagnoses": [
+    {
+      "condition": "HTN",
+      "certainty": null,
+      "status": "suboptimal control"
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "continue rx",
+    "arrange f2f bp assessment"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "1 week",
+    "instructions": "review"
+  }
+}

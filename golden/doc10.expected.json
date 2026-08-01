@@ -1,0 +1,30 @@
+{
+  "consultation_id": "TM-2026-0010",
+  "date": null,
+  "patient": {
+    "name": "Benjamin D.",
+    "age_value": 57,
+    "age_unit": "year(s)",
+    "sex": null
+  },
+  "patient_history": "patient denies adverse effects",
+  "consultation_reason": "repeat prescription request",
+  "diagnoses": [],
+  "medications": [
+    {
+      "medicine_name": "Atorvastatin",
+      "dosage": 20.0,
+      "unit": "mg",
+      "frequency": "nightly",
+      "duration": "3 months",
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "before next appoinment",
+    "instructions": "repeat lipid profile"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "consultation_id": "TM-2026-0015",
+  "date": "22 Mar 2026",
+  "patient": {
+    "name": "Adam R.",
+    "age_value": 6.5,
+    "age_unit": "month(s)",
+    "sex": "Male"
+  },
+  "patient_history": "mother reports that the patient developed fever yesterday evening with a maximum temperature of 38.5°c. the baby has been feeding less than usual but is still taking some breast milk. no vomiting, diarrhoea, rash, or breathing difficulty reported. no known sick contacts. immunisations are up to date",
+  "consultation_reason": "fever and reduced feeding for 2 days",
+  "diagnoses": [
+    {
+      "condition": "Viral Upper Respiratory Tract Infection",
+      "certainty": "likely",
+      "status": "stable"
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": 2.5,
+      "unit": "ml",
+      "frequency": "as needed",
+      "duration": "3 days",
+      "additional_notes": "give after feeding"
+    }
+  ],
+  "treatment_plan": [
+    "encourage adequate fluid intake",
+    "monitor temperature and feeding pattern",
+    "continue breastfeeding"
+  ],
+  "provider": null,
+  "clinical_observations": "infant appears alert and responsive during video consultation. mild irritability noted by caregiver. no signs of respiratory distress observed",
+  "follow_up_instructions": {
+    "timeframe": "48 hours",
+    "instructions": "return to clinic if fever persists or symptoms worsen"
+  }
+}

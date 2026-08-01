@@ -1,0 +1,28 @@
+{
+  "consultation_id": "TM-2026-0007",
+  "date": "05 Apr 2026",
+  "patient": {
+    "name": "Grace W.",
+    "age_value": 31,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "patient_history": "no fever. no flank pain",
+  "consultation_reason": "burning when urinating since yesterday",
+  "diagnoses": [
+    {
+      "condition": "Uncomplicated UTI",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "ordered urine culture",
+    "will commence antibiotics if clinically indicated after assessment",
+    "safety advice given"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}

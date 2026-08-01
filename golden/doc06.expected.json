@@ -1,0 +1,30 @@
+{
+  "consultation_id": "TM-2026-0006",
+  "date": null,
+  "patient": {
+    "name": "John T",
+    "age_value": 63,
+    "age_unit": "year(s)",
+    "sex": "Male"
+  },
+  "patient_history": "glucose readings mostly between 6.5–7.8 mmol/l. medication adherence good. walking 30 mins/day",
+  "consultation_reason": "follow-up for type 2 diabetes",
+  "diagnoses": [
+    {
+      "condition": "Type 2 Diabetes",
+      "certainty": null,
+      "status": "stable"
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "continue metformin",
+    "diet reinforced"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "3 months",
+    "instructions": "repeat hba1c"
+  }
+}

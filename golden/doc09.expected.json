@@ -1,0 +1,35 @@
+{
+  "consultation_id": "TM-2026-0009",
+  "date": null,
+  "patient": {
+    "name": "Chloe H.",
+    "age_value": 18,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "patient_history": null,
+  "consultation_reason": "migraine review",
+  "diagnoses": [
+    {
+      "condition": "Typical Migraine",
+      "certainty": null,
+      "status": null
+    },
+     {
+      "condition": "Photophobia",
+      "certainty": null,
+      "status": "present"
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "continue triptan",
+    "maintain headache diary"
+  ],
+  "provider": null,
+  "clinical_observations": "photophobia present. no red flag symptoms",
+  "follow_up_instructions": {
+    "timeframe": "as needed",
+    "instructions": "return to clinic"
+  }
+}
