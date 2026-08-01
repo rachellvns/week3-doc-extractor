@@ -1,0 +1,28 @@
+Virtual Consultation Record
+
+Visit ID: TM-2026-0014
+
+Patient
+Emily C.
+Age: 7 years
+Sex: Female
+
+Consultation conducted with patient's mother.
+
+Chief Complaint
+Cough and runny nose for 5 days.
+
+History
+Mother reports low-grade fever during the first two days, now resolved. Child remains active and is eating and drinking normally. No breathing difficulty, wheezing, or chest pain. COVID-19 home test negative.
+
+Assessment
+Likely viral upper respiratory tract infection.
+
+Advice Given
+• Ensure adequate hydration.
+• Honey may be used for cough (age appropriate).
+• Paracetamol if fever returns.
+• Monitor for worsening symptoms or breathing difficulties.
+
+Follow-up
+No routine review required unless symptoms persist beyond one week.
