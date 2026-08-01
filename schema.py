@@ -1,12 +1,22 @@
 # The purpose of this file is to validate the output schema from the LLM
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 from typing import Literal
 
 class Patient(BaseModel):
     name: str = Field(min_length=1)
-    age: float | None = Field(default=None,ge=0) # to accomodate baby <1 year
+    age_value: float | None = None
+    age_unit: Literal["year(s)", "month(s)", "week(s)", "day(s)"] | None = None
     sex: Literal["Male", "Female"] | None = None
+    
+    @model_validator(mode="after")
+    def validate_age_format(self):
+        if self.age is not None and self.age_unit is not None:
+            if self.age_unit == "years" and self.age % 1 != 0:
+                raise ValueError(
+                    "Age in years must be a whole number"
+                )
+        return self
     
 class Diagnosis(BaseModel):
     condition: str
