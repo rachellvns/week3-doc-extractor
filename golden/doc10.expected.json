@@ -1,0 +1,32 @@
+{
+  "consultation_id": "TM-2026-0010",
+  "date": null,
+  "patient": {
+    "name": "Benjamin D.",
+    "age": 57,
+    "sex": null
+  },
+  "patient_history": null,
+  "consultation_reason": "Repeat prescription request.",
+  "diagnoses": [],
+  "medications": [
+    {
+      "medicine_name": "Atorvastatin",
+      "dosage": 20.0,
+      "unit": "mg",
+      "frequency": "nightly",
+      "duration": "3 months",
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "Prescription renewed for 3 months",
+    "Repeat lipid profile before next appointment"
+  ],
+  "provider": null,
+  "clinical_observations": "Patient denies adverse effects.",
+  "follow_up_instructions": {
+    "timeframe": "before next appointment",
+    "instructions": "Repeat lipid profile"
+  }
+}

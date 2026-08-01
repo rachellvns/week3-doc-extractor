@@ -1,0 +1,30 @@
+{
+  "consultation_id": null,
+  "date": null,
+  "patient": {
+    "name": "Hannah M.",
+    "age": 42,
+    "sex": null
+  },
+  "patient_history": "She reports difficulty falling asleep rather than staying asleep. Stress at work appears to be a contributing factor.",
+  "consultation_reason": "Poor sleep over the past month.",
+  "diagnoses": [
+    {
+      "condition": "Short-term insomnia",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "Reduce caffeine intake",
+    "Maintain consistent bedtime",
+    "Sleep hygiene education provided"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "one month",
+    "instructions": "Review"
+  }
+}

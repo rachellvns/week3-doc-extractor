@@ -1,0 +1,27 @@
+{
+  "consultation_id": null,
+  "date": null,
+  "patient": {
+    "name": "Grace W.",
+    "age": 31,
+    "sex": "Female"
+  },
+  "patient_history": null,
+  "consultation_reason": "Complains of burning when urinating since yesterday.",
+  "diagnoses": [
+    {
+      "condition": "Uncomplicated UTI",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "Ordered urine culture",
+    "Will commence antibiotics if clinically indicated after assessment",
+    "Safety advice given"
+  ],
+  "provider": null,
+  "clinical_observations": "No fever. No flank pain.",
+  "follow_up_instructions": null
+}

@@ -1,0 +1,27 @@
+{
+  "consultation_id": "TM-2026-0012",
+  "date": null,
+  "patient": {
+    "name": "Lucas A.",
+    "age": 29,
+    "sex": "Male"
+  },
+  "patient_history": null,
+  "consultation_reason": "Diarrhoea for 2 days.",
+  "diagnoses": [
+    {
+      "condition": "Viral gastroenteritis",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "Increase oral fluids",
+    "Oral rehydration salts",
+    "Seek urgent care if blood in stool, persistent vomiting or dehydration develops"
+  ],
+  "provider": "Dr. J. Tan",
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}

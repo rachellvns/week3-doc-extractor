@@ -1,0 +1,35 @@
+{
+  "consultation_id": "TM-2026-0008",
+  "date": null,
+  "patient": {
+    "name": "Ethan C.",
+    "age": 40,
+    "sex": null
+  },
+  "patient_history": "Pain began after moving furniture. No numbness. No bowel/bladder symptoms.",
+  "consultation_reason": null,
+  "diagnoses": [
+    {
+      "condition": "Mechanical lower back strain",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "NSAIDs",
+      "dosage": null,
+      "unit": null,
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "Stretching exercises",
+    "Heat therapy"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}

@@ -1,0 +1,31 @@
+{
+  "consultation_id": "TM-2026-0014",
+  "date": "04 Apr 2026",
+  "patient": {
+    "name": "Lily W.",
+    "age_value": 4.0,
+    "age_unit": "month(s)",
+    "sex": "Female"
+  },
+  "patient_history": "Mother reports symptoms started about 2 weeks ago. Baby frequently spits up small amounts of milk after breastfeeding and sometimes cries or arches her back after feeds. Still feeding well and has around 6-7 wet diapers daily. No fever. No blood in vomit. No diarrhoea. Weight gain has been appropriate according to mother. Born full term via normal delivery. No known allergies. No significant medical history.",
+  "consultation_reason": "Baby has been having frequent spit-ups after feeds and seems uncomfortable after drinking milk.",
+  "diagnoses": [
+    {
+      "condition": "Gastroesophageal reflux of infancy",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "Reassurance provided regarding common reflux symptoms in infants",
+    "Advise smaller and more frequent feeds",
+    "Keep baby upright for 20-30 minutes after feeding"
+  ],
+  "provider": null,
+  "clinical_observations": "Baby appears well from video review. Alert and interactive. No signs of dehydration noted.",
+  "follow_up_instructions": {
+    "timeframe": null,
+    "instructions": "Review if symptoms worsen. Return to clinic as needed."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "consultation_id": "TM-2026-0013",
+  "date": "22 Feb 2026",
+  "patient": {
+    "name": "Richard G.",
+    "age": 67,
+    "sex": "Male"
+  },
+  "patient_history": null,
+  "consultation_reason": "Routine asthma follow-up.",
+  "diagnoses": [
+    {
+      "condition": "Asthma",
+      "certainty": null,
+      "status": "well controlled"
+    }
+  ],
+  "medications": [],
+  "treatment_plan": [
+    "Continue current inhaler regimen",
+    "Encourage annual influenza vaccination",
+    "Review inhaler technique during next in-person visit"
+  ],
+  "provider": "Dr. Amanda Lee",
+  "clinical_observations": "Patient reports using salbutamol inhaler approximately twice per week. No nocturnal symptoms. No recent hospital admissions or exacerbations. Able to complete daily walks without shortness of breath.",
+  "follow_up_instructions": {
+    "timeframe": "6 months",
+    "instructions": "Repeat follow-up"
+  }
+}

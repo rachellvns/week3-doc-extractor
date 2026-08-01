@@ -1,0 +1,38 @@
+{
+  "consultation_id": "TM-2026-0002",
+  "date": null,
+  "patient": {
+    "name": "Michael K.",
+    "age": 46,
+    "sex": "Male"
+  },
+  "patient_history": null,
+  "consultation_reason": "Headache that began four days ago after prolonged computer work.",
+  "diagnoses": [
+    {
+      "condition": "Tension headache",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Ibuprofen",
+      "dosage": null,
+      "unit": null,
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "Recommend ergonomic workstation adjustments",
+    "Adequate hydration"
+  ],
+  "provider": null,
+  "clinical_observations": "Pain is dull, bilateral and improves with rest. No vomiting, photophobia or neurological deficits reported.",
+  "follow_up_instructions": {
+    "timeframe": ">7 days",
+    "instructions": "Return if headache persists or becomes severe"
+  }
+}
