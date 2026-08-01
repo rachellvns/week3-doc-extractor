@@ -50,3 +50,10 @@ def extract(doc: str, retries: int = 2) -> Consultation:
                       "content": f"Your JSON failed validation:\n{e}\n"
                       "Return corrected JSON only."}]
     raise RuntimeError(f"Extraction failed after {retries+1} tries")
+
+
+# document = Path("golden/doc01.txt").read_text(encoding="utf-8")
+
+# result = extract(document)
+
+# print(result.model_dump_json(indent=2))
