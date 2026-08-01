@@ -5,7 +5,7 @@ from typing import Literal
 
 class Patient(BaseModel):
     name: str = Field(min_length=1)
-    age_value: float | None = Field(default=None, ge=0)
+    age_value: int | float | None = Field(default=None, ge=0)
     age_unit: Literal["year(s)", "month(s)", "week(s)", "day(s)"] | None = None
     sex: Literal["Male", "Female"] | None = None
     
