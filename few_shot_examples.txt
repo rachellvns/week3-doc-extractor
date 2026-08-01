@@ -1,7 +1,6 @@
 Example 1
 
 Input:
-text
 TM Case 0007
 Date: 2026/04/01
 
@@ -33,10 +32,10 @@ Output:
     "sex": "Female"
   },
   "patient_history": null,
-  "consultation_reason": "Sore throat for 3 days.",
+  "consultation_reason": "sore throat for 3 days",
   "diagnoses": [
     {
-      "condition": "Viral pharyngitis",
+      "condition": "Viral Pharyngitis",
       "certainty": "likely",
       "status": null
     }
@@ -48,12 +47,12 @@ Output:
       "unit": "mg",
       "frequency": "as needed",
       "duration": null,
-      "additional_notes": "If fever returns."
+      "additional_notes": "if fever returns"
     }
   ],
   "treatment_plan": [
-    "Rest",
-    "Increase fluids"
+    "rest",
+    "increase fluids"
   ],
   "provider": null,
   "clinical_observations": null,
@@ -97,7 +96,7 @@ Output:
   "consultation_reason": null,
   "diagnoses": [
     {
-      "condition": "Otitis media",
+      "condition": "Otitis Media",
       "certainty": "confirmed",
       "status": null
     }
@@ -108,7 +107,7 @@ Output:
       "dosage": 125,
       "unit": "mg",
       "frequency": "twice daily",
-      "duration": "for 7 days",
+      "duration": "7 days",
       "additional_notes": null
     }
   ],
@@ -116,10 +115,11 @@ Output:
   "provider": null,
   "clinical_observations": null,
   "follow_up_instructions": {
-    "timeframe": null,
-    "instructions": "Return to clinic as needed."
+    "timeframe": "as needed",
+    "instructions": "return to clinic"
   }
 }
+
 
 Example 3
 
@@ -143,7 +143,6 @@ Avoid bright lights.
 
 Rx:
 Ibuprofen 400mg TDS.
-
 
 Output:
 {
@@ -175,10 +174,72 @@ Output:
     }
   ],
   "treatment_plan": [
-    "Hydration",
-    "Avoid bright lights"
+    "hydration",
+    "avoid bright lights"
   ],
   "provider": null,
   "clinical_observations": null,
   "follow_up_instructions": null
+}
+
+
+Example 4
+
+Input:
+Consultation #: TM-2026-0055
+
+Patient: David N. (52M)
+
+Consultation for lower back pain after lifting furniture two days ago.
+
+Pain is localized, worsens with bending. No numbness or leg weakness reported.
+
+Impression:
+Musculoskeletal strain.
+
+Rx:
+Paracetamol if required.
+Advise rest and avoid heavy lifting for now.
+
+Disposition:
+Return if pain persists beyond 5 days or numbness develops.
+
+Output:
+{
+  "consultation_id": "TM-2026-0055",
+  "date": null,
+  "patient": {
+    "name": "David N.",
+    "age_value": 52,
+    "age_unit": "year(s)",
+    "sex": "Male"
+  },
+  "patient_history": "pain is localized, worsens with bending. no numbness or leg weakness reported",
+  "consultation_reason": "lower back pain after lifting furniture two days ago",
+  "diagnoses": [
+    {
+      "condition": "Musculoskeletal Strain",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": null,
+      "unit": null,
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "advise rest and avoid heavy lifting for now"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": null,
+    "instructions": "return if pain persists beyond 5 days or numbness develops"
+  }
 }
