@@ -29,14 +29,14 @@ class Consultation(BaseModel):
     consultation_id: str = Field(pattern=r"^(TM-\d{4}-\d{4})$")
     date: str | None = None
     patient: Patient
-    history: str | None = None
-    reason: str | None = None
+    patient_history: str | None = None
+    consultation_reason: str | None = None
     diagnoses: list[Diagnosis] = Field(default_factory=list) # to avoid mutability
     medications: list[Medication] = Field(default_factory=list) # to avoid mutability
-    action_plan: list[str] = Field(default_factory=list) # to avoid mutability
+    treatment_plan: list[str] = Field(default_factory=list) # to avoid mutability
     provider: str | None = None
-    clinical_notes: str | None = None
-    follow_up: FollowUp | None = None
+    clinical_observations: str | None = None
+    follow_up_instructions: FollowUp | None = None
     
     
     
