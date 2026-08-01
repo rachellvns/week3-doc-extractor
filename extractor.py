@@ -6,8 +6,8 @@ from pydantic import ValidationError
 
 from schema import Consultation
 
-template = Path("prompts/extract_v1.txt").read_text()
-examples = Path("few_shot_examples.txt").read_text()
+template = Path("prompts/extract_v2.txt").read_text(encoding="utf-8")
+examples = Path("few_shot_examples.txt").read_text(encoding="utf-8")
 
 def render_prompt(document: str) -> str:
     return template.format(
@@ -31,6 +31,8 @@ def call_llm(messages: list[dict], temperature: float = 0) -> str:
     return response.content[0].text
 
 def extract(doc: str, retries: int = 2) -> Consultation:
+    if not doc.strip():
+        return None
     msgs = [
         {
             "role": "user", 
