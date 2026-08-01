@@ -3,11 +3,12 @@
   "date": null,
   "patient": {
     "name": "Benjamin D.",
-    "age": 57,
+    "age_value": 57,
+    "age_unit": "year(s)",
     "sex": null
   },
-  "patient_history": null,
-  "consultation_reason": "Repeat prescription request.",
+  "patient_history": "patient denies adverse effects",
+  "consultation_reason": "repeat prescription request",
   "diagnoses": [],
   "medications": [
     {
@@ -19,14 +20,11 @@
       "additional_notes": null
     }
   ],
-  "treatment_plan": [
-    "Prescription renewed for 3 months",
-    "Repeat lipid profile before next appointment"
-  ],
+  "treatment_plan": [],
   "provider": null,
-  "clinical_observations": "Patient denies adverse effects.",
+  "clinical_observations": null,
   "follow_up_instructions": {
-    "timeframe": "before next appointment",
-    "instructions": "Repeat lipid profile"
+    "timeframe": "before next appoinment",
+    "instructions": "repeat lipid profile"
   }
 }

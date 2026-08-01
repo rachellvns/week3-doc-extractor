@@ -3,25 +3,27 @@
   "date": null,
   "patient": {
     "name": "Lucas A.",
-    "age": 29,
+    "age_value": 29,
+    "age_unit": "year(s)",
     "sex": "Male"
   },
   "patient_history": null,
-  "consultation_reason": "Diarrhoea for 2 days.",
+  "consultation_reason": "diarrhoea for 2 days",
   "diagnoses": [
     {
-      "condition": "Viral gastroenteritis",
+      "condition": "Viral Gastroenteritis",
       "certainty": "likely",
       "status": null
     }
   ],
   "medications": [],
   "treatment_plan": [
-    "Increase oral fluids",
-    "Oral rehydration salts",
-    "Seek urgent care if blood in stool, persistent vomiting or dehydration develops"
+    "increase oral fluids",
+    "oral rehydration salts"
   ],
   "provider": "Dr. J. Tan",
   "clinical_observations": null,
-  "follow_up_instructions": null
-}
+  "follow_up_instructions": {
+    "timeframe": null,
+    "instructions": "urgent care if blood in stool, persistent vomiting or dehydration develops"
+}}

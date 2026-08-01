@@ -3,14 +3,15 @@
   "date": null,
   "patient": {
     "name": "Ethan C.",
-    "age": 40,
+    "age_value": 40,
+    "age_unit": "year(s)",
     "sex": null
   },
-  "patient_history": "Pain began after moving furniture. No numbness. No bowel/bladder symptoms.",
+  "patient_history": "pain began after moving furniture. no numbness. no bowel/bladder symptoms",
   "consultation_reason": null,
   "diagnoses": [
     {
-      "condition": "Mechanical lower back strain",
+      "condition": "Mechanical Lower Back Strain",
       "certainty": null,
       "status": null
     }
@@ -26,8 +27,8 @@
     }
   ],
   "treatment_plan": [
-    "Stretching exercises",
-    "Heat therapy"
+    "stretching exercises",
+    "heat therapy"
   ],
   "provider": null,
   "clinical_observations": null,

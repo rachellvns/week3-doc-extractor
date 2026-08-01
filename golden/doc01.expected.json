@@ -3,14 +3,15 @@
   "date": "10 Jan 2026",
   "patient": {
     "name": "Sarah L.",
-    "age": 28,
+    "age_value": 28,
+    "age_unit": "year(s)",
     "sex": "Female"
   },
-  "patient_history": "Patient reports painful swallowing. Fever peaked at 38.1°C yesterday. Denies cough, SOB, chest pain or recent travel.",
-  "consultation_reason": "Sore throat and fever for 3 days.",
+  "patient_history": "patient reports painful swallowing. fever peaked at 38.1°c yesterday. denies cough, sob, chest pain or recent travel",
+  "consultation_reason": "sore throat and fever for 3 days",
   "diagnoses": [
     {
-      "condition": "Viral pharyngitis",
+      "condition": "Viral Pharyngitis",
       "certainty": "likely",
       "status": null
     }
@@ -27,13 +28,12 @@
     
   ],
   "treatment_plan": [
-    "Fluids and rest",
-    "Review if symptoms worsen"
+    "fluids and rest"
   ],
   "provider": null,
   "clinical_observations": null,
   "follow_up_instructions": {
     "timeframe": "72 hours",
-    "instructions": "Virtual review if no improvement"
+    "instructions": "virtual review if no improvement"
   }
 }

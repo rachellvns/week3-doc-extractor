@@ -1,39 +1,29 @@
 {
   "consultation_id": "TM-2026-0005",
-  "date": null,
+  "date": "21 May 2026",
   "patient": {
     "name": "Olivia S.",
-    "age": 24,
+    "age_value": 24,
+    "age_unit": "year(s)",
     "sex": "Female"
   },
-  "patient_history": null,
-  "consultation_reason": "Acne follow-up",
-  "diagnoses": [],
-  "medications": [
+  "patient_history": "less inflammation, fewer breakouts, mild dryness",
+  "consultation_reason": "acne follow-up",
+  "diagnoses": [
     {
-      "medicine_name": "Adapalene",
-      "dosage": null,
-      "unit": null,
-      "frequency": "nightly",
-      "duration": null,
-      "additional_notes": null
-    },
-    {
-      "medicine_name": "Moisturizer",
-      "dosage": null,
-      "unit": null,
-      "frequency": "daily",
-      "duration": null,
-      "additional_notes": null
+        "condition": "Acne",
+        "certainty": null,
+        "status": "improving"
     }
   ],
+  "medications": [],
   "treatment_plan": [
-    "Continue same regimen"
+    "continue same regimen"
   ],
   "provider": null,
-  "clinical_observations": "Less inflammation, Fewer breakouts, Mild dryness",
+  "clinical_observations": null,
   "follow_up_instructions": {
     "timeframe": "8 weeks",
-    "instructions": "Review"
+    "instructions": "review"
   }
 }

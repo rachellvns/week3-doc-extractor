@@ -3,30 +3,23 @@
   "date": null,
   "patient": {
     "name": "Emma R.",
-    "age": null,
+    "age_value": null,
+    "age_unit": null,
     "sex": "Female"
   },
-  "patient_history": "Symptoms present approximately one week. Worse outdoors. Known seasonal allergies.",
-  "consultation_reason": "Sneezing, itchy eyes and blocked nose.",
+  "patient_history": "symptoms present approximately one week. worse outdoors. known seasonal allergies",
+  "consultation_reason": "sneezing, itchy eyes and blocked nose",
   "diagnoses": [
     {
-      "condition": "Allergic rhinitis",
+      "condition": "Allergic Rhinitis",
       "certainty": null,
       "status": null
     }
   ],
-  "medications": [
-    {
-      "medicine_name": "Cetirizine",
-      "dosage": 10.0,
-      "unit": "mg",
-      "frequency": "once daily",
-      "duration": null,
-      "additional_notes": null
-    }
-  ],
+  "medications": [],
   "treatment_plan": [
-    "Avoid pollen exposure where possible"
+    "continue cetirizine 10 mg once daily",
+    "avoid pollen exposure where possible"
   ],
   "provider": null,
   "clinical_observations": null,

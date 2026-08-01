@@ -3,11 +3,12 @@
   "date": null,
   "patient": {
     "name": "Daniel P.",
-    "age": 52,
+    "age_value": 52,
+    "age_unit": "year(s)",
     "sex": "Male"
   },
-  "patient_history": "Home BP averaging 145/92 over past 2 weeks. Compliant with amlodipine. Denies CP/SOB/dizziness.",
-  "consultation_reason": "BP review",
+  "patient_history": "home bp averaging 145/92 over past 2 weeks. compliant with amlodipine. denies cp/sob/dizziness",
+  "consultation_reason": "bp review",
   "diagnoses": [
     {
       "condition": "HTN",
@@ -17,13 +18,13 @@
   ],
   "medications": [],
   "treatment_plan": [
-    "Continue Rx",
-    "Arrange F2F BP assessment"
+    "continue rx",
+    "arrange f2f bp assessment"
   ],
   "provider": null,
   "clinical_observations": null,
   "follow_up_instructions": {
     "timeframe": "1 week",
-    "instructions": "Review"
+    "instructions": "review"
   }
 }

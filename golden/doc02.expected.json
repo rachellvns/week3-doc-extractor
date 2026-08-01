@@ -3,14 +3,15 @@
   "date": null,
   "patient": {
     "name": "Michael K.",
-    "age": 46,
+    "age_value": 46,
+    "age_unit": "year(s)",
     "sex": "Male"
   },
-  "patient_history": null,
-  "consultation_reason": "Headache that began four days ago after prolonged computer work.",
+  "patient_history": "pain is dull, bilateral and improves with rest. no vomiting, photophobia or neurological deficits reported",
+  "consultation_reason": "headache that began four days ago after prolonged computer work",
   "diagnoses": [
     {
-      "condition": "Tension headache",
+      "condition": "Tension Headache",
       "certainty": null,
       "status": null
     }
@@ -26,13 +27,12 @@
     }
   ],
   "treatment_plan": [
-    "Recommend ergonomic workstation adjustments",
-    "Adequate hydration"
+    "recommend ergonomic workstation adjustments and adequate hydration"
   ],
   "provider": null,
-  "clinical_observations": "Pain is dull, bilateral and improves with rest. No vomiting, photophobia or neurological deficits reported.",
+  "clinical_observations": null,
   "follow_up_instructions": {
-    "timeframe": ">7 days",
-    "instructions": "Return if headache persists or becomes severe"
+    "timeframe": null,
+    "instructions": "return if headache persists >7 days or becomes severe"
   }
 }

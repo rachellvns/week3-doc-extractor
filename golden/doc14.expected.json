@@ -7,25 +7,25 @@
     "age_unit": "month(s)",
     "sex": "Female"
   },
-  "patient_history": "Mother reports symptoms started about 2 weeks ago. Baby frequently spits up small amounts of milk after breastfeeding and sometimes cries or arches her back after feeds. Still feeding well and has around 6-7 wet diapers daily. No fever. No blood in vomit. No diarrhoea. Weight gain has been appropriate according to mother. Born full term via normal delivery. No known allergies. No significant medical history.",
-  "consultation_reason": "Baby has been having frequent spit-ups after feeds and seems uncomfortable after drinking milk.",
+  "patient_history": "mother reports symptoms started about 2 weeks ago. baby frequently spits up small amounts of milk after breastfeeding and sometimes cries or arches her back after feeds. still feeding well and has around 6-7 wet diapers daily. no fever. no blood in vomit. no diarrhoea. weight gain has been appropriate according to mother. born full term via normal delivery. no known allergies. no significant medical history",
+  "consultation_reason": "baby has been having frequent spit-ups after feeds and seems uncomfortable after drinking milk",
   "diagnoses": [
     {
-      "condition": "Gastroesophageal reflux of infancy",
+      "condition": "Gastroesophageal Reflux of Infancy",
       "certainty": "likely",
       "status": null
     }
   ],
   "medications": [],
   "treatment_plan": [
-    "Reassurance provided regarding common reflux symptoms in infants",
-    "Advise smaller and more frequent feeds",
-    "Keep baby upright for 20-30 minutes after feeding"
+    "reassurance provided regarding common reflux symptoms in infants",
+    "advise smaller and more frequent feeds",
+    "keep baby upright for 20-30 minutes after feeding"
   ],
   "provider": null,
-  "clinical_observations": "Baby appears well from video review. Alert and interactive. No signs of dehydration noted.",
+  "clinical_observations": "baby appears well from video review. alert and interactive. no signs of dehydration noted",
   "follow_up_instructions": {
-    "timeframe": null,
-    "instructions": "Review if symptoms worsen. Return to clinic as needed."
+    "timeframe": "as needed",
+    "instructions": "review if symptoms worsen. return to clinic"
   }
 }

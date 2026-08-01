@@ -3,36 +3,33 @@
   "date": null,
   "patient": {
     "name": "Chloe H.",
-    "age": 18,
+    "age_value": 18,
+    "age_unit": "year(s)",
     "sex": "Female"
   },
   "patient_history": null,
-  "consultation_reason": "Migraine review.",
+  "consultation_reason": "migraine review",
   "diagnoses": [
     {
-      "condition": "Typical migraine",
+      "condition": "Typical Migraine",
       "certainty": null,
       "status": null
+    },
+     {
+      "condition": "Photophobia",
+      "certainty": null,
+      "status": "present"
     }
   ],
-  "medications": [
-    {
-      "medicine_name": "Triptan",
-      "dosage": null,
-      "unit": null,
-      "frequency": null,
-      "duration": null,
-      "additional_notes": null
-    }
-  ],
+  "medications": [],
   "treatment_plan": [
-    "Continue triptan",
-    "Maintain headache diary"
+    "continue triptan",
+    "maintain headache diary"
   ],
   "provider": null,
-  "clinical_observations": "Photophobia present. No red flag symptoms.",
+  "clinical_observations": "photophobia present. no red flag symptoms",
   "follow_up_instructions": {
-    "timeframe": null,
-    "instructions": "Return to clinic as needed"
+    "timeframe": "as needed",
+    "instructions": "return to clinic"
   }
 }
