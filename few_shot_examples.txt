@@ -243,3 +243,102 @@ Output:
     "instructions": "return if pain persists beyond 5 days or numbness develops"
   }
 }
+
+Example 5
+
+Input:
+Telemedicine Consultation
+
+Patient:
+Noah K.
+7.5 months
+Male
+
+Reason:
+Feeding discomfort.
+
+History:
+Father reports symptoms started around 10 days ago.
+Baby becomes unsettled after bottle feeds and occasionally pulls away from the teat.
+He is still taking feeds normally and has 5-6 wet diapers per day.
+No fever.
+No blood in stool.
+No vomiting.
+Growth has been tracking well according to parents.
+
+Background:
+Delivered at term without complications.
+No known drug allergies.
+No previous hospital admissions.
+
+Assessment:
+Possible feeding intolerance.
+
+Output:
+{
+  "consultation_id": null,
+  "date": null,
+  "patient": {
+    "name": "Noah K.",
+    "age_value": 7.5,
+    "age_unit": "month(s)",
+    "sex": "Male"
+  },
+  "patient_history": "father reports symptoms started around 10 days ago. baby becomes unsettled after bottle feeds and occasionally pulls away from the teat. he is still taking feeds normally and has 5-6 wet diapers per day. no fever. no blood in stool. no vomiting. growth has been tracking well according to parents. delivered at term without complications. no known drug allergies. no previous hospital admissions",
+  "consultation_reason": "feeding discomfort",
+  "diagnoses": [
+    {
+      "condition": "Feeding Intolerance",
+      "certainty": "possible",
+      "status": null
+    }
+  ]
+}
+
+Example 6
+
+Input:
+TM20261234
+Patient:
+Dorothy W.
+16Fe
+
+Assessment:
+Classic cluster headache with tearing of the left eye.
+
+Medication:
+Dexamethasone 5mg od
+
+Output:
+{
+  "consultation_id": "TM-2026-1234",
+  "date": null,
+  "patient": {
+    "name": "Dorothy W.",
+    "age_value": 16,
+    "age_unit": "year(s)",
+    "sex": "Female"
+  },
+  "diagnoses": [
+    {
+      "condition": "Classic Cluster Headache",
+      "certainty": null,
+      "status": null
+    },
+    {
+      "condition": "Tearing of The Left Eye",
+      "certainty": null,
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Dexamethasone",
+      "dosage": 5,
+      "unit": "mg",
+      "frequency": "once daily",
+      "duration": null,
+      "additional_notes": null
+    }
+  ]
+}
