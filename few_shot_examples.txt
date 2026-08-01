@@ -1,178 +1,184 @@
 Example 1
 
-Telemedicine consultation document:
+Input:
+text
+TM Case 0007
+Date: 2026/04/01
 
-Consultation ID: TM-2026-0001
-Date: 15/03/2026
+Patient: Sarah L.
+Age: 28 years
+Female
 
-Patient:
-Name: Amelia Wong
-Age: 28
-Sex: Female
+Reason:
+Sore throat x3 days.
 
-Reason for consultation:
-Follow-up consultation for migraine symptoms.
+Assessment:
+Likely viral pharyngitis.
 
-History:
-Patient reports recurrent headaches for 3 months. Symptoms have improved with current treatment.
+Rx:
+Paracetamol 500 mg PRN if fever returns.
 
-Diagnosis:
-Migraine, confirmed.
+Plan:
+Rest.
+Increase fluids.
 
-Medication:
-Sumatriptan 50 mg PRN.
-
-Treatment plan:
-Continue medication when required.
-Maintain headache diary.
-
-Follow-up:
-Review symptoms in 2 months.
-
-
-Expected JSON output:
-
+Output:
 {
-  "consultation_id": "TM-2026-0001",
-  "date": "15/03/2026",
+  "consultation_id": "TM-2026-0007",
+  "date": "01 Apr 2026",
   "patient": {
-    "name": "Amelia Wong",
-    "age": 28,
+    "name": "Sarah L.",
+    "age_value": 28,
+    "age_unit": "year(s)",
     "sex": "Female"
   },
-  "patient_history": "Patient reports recurrent headaches for 3 months. Symptoms have improved with current treatment.",
-  "consultation_reason": "Follow-up consultation for migraine symptoms.",
+  "patient_history": null,
+  "consultation_reason": "Sore throat for 3 days.",
   "diagnoses": [
     {
-      "condition": "Migraine",
+      "condition": "Viral pharyngitis",
+      "certainty": "likely",
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Paracetamol",
+      "dosage": 500,
+      "unit": "mg",
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": "If fever returns."
+    }
+  ],
+  "treatment_plan": [
+    "Rest",
+    "Increase fluids"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}
+
+
+Example 2
+
+Input:
+Consultation ID: TM-0012
+
+Date:
+15 May 2026
+
+Patient:
+Adam R.
+6.5 months
+Male
+
+Assessment:
+Confirmed otitis media.
+
+Medication:
+Amoxicillin 125 mg BD x7 days.
+
+Follow-up:
+RTC PRN.
+
+Output:
+{
+  "consultation_id": "TM-2026-0012",
+  "date": "15 May 2026",
+  "patient": {
+    "name": "Adam R.",
+    "age_value": 6.5,
+    "age_unit": "month(s)",
+    "sex": "Male"
+  },
+  "patient_history": null,
+  "consultation_reason": null,
+  "diagnoses": [
+    {
+      "condition": "Otitis media",
       "certainty": "confirmed",
       "status": null
     }
   ],
   "medications": [
     {
-      "medicine_name": "Sumatriptan",
-      "dosage": 50,
+      "medicine_name": "Amoxicillin",
+      "dosage": 125,
       "unit": "mg",
-      "frequency": "as needed",
-      "duration": null,
+      "frequency": "twice daily",
+      "duration": "for 7 days",
       "additional_notes": null
     }
   ],
-  "treatment_plan": [
-    "Continue medication when required",
-    "Maintain headache diary"
-  ],
+  "treatment_plan": [],
   "provider": null,
   "clinical_observations": null,
   "follow_up_instructions": {
-    "timeframe": "2 months",
-    "instructions": "Review symptoms"
+    "timeframe": null,
+    "instructions": "Return to clinic as needed."
   }
 }
 
+Example 3
 
-Example 2
+Input:
+Case: TM-2026-0042
 
-Telemedicine consultation document:
+Date:
+8-6-2026
 
-ID: TM-20260006
+Patient:
+Emily T.
+34 years
+Female
 
-Pt: Daniel Lim
-Age: 45
-Sex: M
+Assessment:
+Possible migraine, improving.
 
-CC:
-High blood pressure review.
-
-Hx:
-Known hypertension. Patient reports occasional dizziness after medication.
-
-Dx:
-Hypertension, stable and controlled.
+Treatment:
+Hydration.
+Avoid bright lights.
 
 Rx:
-Amlodipine 10 mg OD.
-
-Plan:
-Continue current medication and monitor blood pressure.
-
-Provider:
-Dr Sarah Wong
+Ibuprofen 400mg TDS.
 
 
-Expected JSON output:
-
+Output:
 {
-  "consultation_id": "TM-2026-0006",
-  "date": null,
+  "consultation_id": "TM-2026-0042",
+  "date": "08 Jun 2026",
   "patient": {
-    "name": "Daniel Lim",
-    "age": 45,
-    "sex": "Male"
+    "name": "Emily T.",
+    "age_value": 34,
+    "age_unit": "year(s)",
+    "sex": "Female"
   },
-  "patient_history": "Known hypertension. Patient reports occasional dizziness after medication.",
-  "consultation_reason": "High blood pressure review.",
+  "patient_history": null,
+  "consultation_reason": null,
   "diagnoses": [
     {
-      "condition": "Hypertension",
-      "certainty": null,
-      "status": "stable and controlled"
+      "condition": "Migraine",
+      "certainty": "possible",
+      "status": "improving"
     }
   ],
   "medications": [
     {
-      "medicine_name": "Amlodipine",
-      "dosage": 10,
+      "medicine_name": "Ibuprofen",
+      "dosage": 400,
       "unit": "mg",
-      "frequency": "once daily",
+      "frequency": "three times daily",
       "duration": null,
       "additional_notes": null
     }
   ],
   "treatment_plan": [
-    "Continue current medication",
-    "Monitor blood pressure"
+    "Hydration",
+    "Avoid bright lights"
   ],
-  "provider": "Dr Sarah Wong",
-  "clinical_observations": null,
-  "follow_up_instructions": null
-}
-
-
-Example 3
-
-Telemedicine consultation document:
-
-Consultation ID:
-TM-2026-0010
-
-Patient:
-Name: Jason Lee
-
-Reason:
-Medication refill request.
-
-Clinical notes:
-Patient requested continuation of previous medication. No new symptoms reported.
-
-
-Expected JSON output:
-
-{
-  "consultation_id": "TM-2026-0010",
-  "date": null,
-  "patient": {
-    "name": "Jason Lee",
-    "age": null,
-    "sex": null
-  },
-  "patient_history": null,
-  "consultation_reason": "Medication refill request.",
-  "diagnoses": [],
-  "medications": [],
-  "treatment_plan": [],
   "provider": null,
-  "clinical_observations": "Patient requested continuation of previous medication. No new symptoms reported.",
+  "clinical_observations": null,
   "follow_up_instructions": null
 }
