@@ -36,7 +36,7 @@ class FollowUp(BaseModel):
     instructions: str | None = None
     
 class Consultation(BaseModel):
-    consultation_id: str = Field(pattern=r"^(TM-\d{4}-\d{4})$")
+    consultation_id: str = Field(pattern=r"^(TM-\d{4}-\d{4})$", default = None)
     date: str | None = None
     patient: Patient
     patient_history: str | None = None
