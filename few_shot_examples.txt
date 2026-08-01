@@ -1,0 +1,178 @@
+Example 1
+
+Telemedicine consultation document:
+
+Consultation ID: TM-2026-0001
+Date: 15/03/2026
+
+Patient:
+Name: Amelia Wong
+Age: 28
+Sex: Female
+
+Reason for consultation:
+Follow-up consultation for migraine symptoms.
+
+History:
+Patient reports recurrent headaches for 3 months. Symptoms have improved with current treatment.
+
+Diagnosis:
+Migraine, confirmed.
+
+Medication:
+Sumatriptan 50 mg PRN.
+
+Treatment plan:
+Continue medication when required.
+Maintain headache diary.
+
+Follow-up:
+Review symptoms in 2 months.
+
+
+Expected JSON output:
+
+{
+  "consultation_id": "TM-2026-0001",
+  "date": "15/03/2026",
+  "patient": {
+    "name": "Amelia Wong",
+    "age": 28,
+    "sex": "Female"
+  },
+  "patient_history": "Patient reports recurrent headaches for 3 months. Symptoms have improved with current treatment.",
+  "consultation_reason": "Follow-up consultation for migraine symptoms.",
+  "diagnoses": [
+    {
+      "condition": "Migraine",
+      "certainty": "confirmed",
+      "status": null
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Sumatriptan",
+      "dosage": 50,
+      "unit": "mg",
+      "frequency": "as needed",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "Continue medication when required",
+    "Maintain headache diary"
+  ],
+  "provider": null,
+  "clinical_observations": null,
+  "follow_up_instructions": {
+    "timeframe": "2 months",
+    "instructions": "Review symptoms"
+  }
+}
+
+
+Example 2
+
+Telemedicine consultation document:
+
+ID: TM-20260006
+
+Pt: Daniel Lim
+Age: 45
+Sex: M
+
+CC:
+High blood pressure review.
+
+Hx:
+Known hypertension. Patient reports occasional dizziness after medication.
+
+Dx:
+Hypertension, stable and controlled.
+
+Rx:
+Amlodipine 10 mg OD.
+
+Plan:
+Continue current medication and monitor blood pressure.
+
+Provider:
+Dr Sarah Wong
+
+
+Expected JSON output:
+
+{
+  "consultation_id": "TM-2026-0006",
+  "date": null,
+  "patient": {
+    "name": "Daniel Lim",
+    "age": 45,
+    "sex": "Male"
+  },
+  "patient_history": "Known hypertension. Patient reports occasional dizziness after medication.",
+  "consultation_reason": "High blood pressure review.",
+  "diagnoses": [
+    {
+      "condition": "Hypertension",
+      "certainty": null,
+      "status": "stable and controlled"
+    }
+  ],
+  "medications": [
+    {
+      "medicine_name": "Amlodipine",
+      "dosage": 10,
+      "unit": "mg",
+      "frequency": "once daily",
+      "duration": null,
+      "additional_notes": null
+    }
+  ],
+  "treatment_plan": [
+    "Continue current medication",
+    "Monitor blood pressure"
+  ],
+  "provider": "Dr Sarah Wong",
+  "clinical_observations": null,
+  "follow_up_instructions": null
+}
+
+
+Example 3
+
+Telemedicine consultation document:
+
+Consultation ID:
+TM-2026-0010
+
+Patient:
+Name: Jason Lee
+
+Reason:
+Medication refill request.
+
+Clinical notes:
+Patient requested continuation of previous medication. No new symptoms reported.
+
+
+Expected JSON output:
+
+{
+  "consultation_id": "TM-2026-0010",
+  "date": null,
+  "patient": {
+    "name": "Jason Lee",
+    "age": null,
+    "sex": null
+  },
+  "patient_history": null,
+  "consultation_reason": "Medication refill request.",
+  "diagnoses": [],
+  "medications": [],
+  "treatment_plan": [],
+  "provider": null,
+  "clinical_observations": "Patient requested continuation of previous medication. No new symptoms reported.",
+  "follow_up_instructions": null
+}
